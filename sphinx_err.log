@@ -1,0 +1,106 @@
+# Sphinx version: 1.6.4
+# Python version: 3.6.2 (CPython)
+# Docutils version: 0.14 
+# Jinja2 version: 2.9.6
+# Last messages:
+#   building [mo]: targets for 0 po files that are out of date
+#   
+#   building [html]: targets for 1 source files that are out of date
+#   
+#   updating environment:
+#   
+#   1 added, 0 changed, 0 removed
+#   
+#   reading sources... [100%] index
+#   
+# Loaded extensions:
+#   alabaster (0.7.10) from /home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/alabaster/__init__.py
+#   sphinx.ext.autodoc (1.6.4) from /home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/autodoc.py
+#   sphinx.ext.viewcode (1.6.4) from /home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/viewcode.py
+#   numpydoc (unknown version) from /home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/numpydoc/__init__.py
+Traceback (most recent call last):
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/cmdline.py", line 306, in main
+    app.build(opts.force_all, filenames)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/application.py", line 339, in build
+    self.builder.build_update()
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/builders/__init__.py", line 331, in build_update
+    'out of date' % len(to_build))
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/builders/__init__.py", line 344, in build
+    updated_docnames = set(self.env.update(self.config, self.srcdir, self.doctreedir))
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/environment/__init__.py", line 584, in update
+    self._read_serial(docnames, self.app)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/environment/__init__.py", line 603, in _read_serial
+    self.read_doc(docname, app)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/environment/__init__.py", line 725, in read_doc
+    pub.publish()
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/core.py", line 217, in publish
+    self.settings)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/io.py", line 74, in read
+    self.parse()
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/readers/__init__.py", line 78, in parse
+    self.parser.parse(self.input, document)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/__init__.py", line 191, in parse
+    self.statemachine.run(inputlines, document, inliner=self.inliner)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 171, in run
+    input_source=document['source'])
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/statemachine.py", line 239, in run
+    context, state, transitions)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/statemachine.py", line 460, in check_line
+    return method(match, context, next_state)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 2753, in underline
+    self.section(title, source, style, lineno - 1, messages)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 327, in section
+    self.new_subsection(title, lineno, messages)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 395, in new_subsection
+    node=section_node, match_titles=True)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 282, in nested_parse
+    node=node, match_titles=match_titles)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 196, in run
+    results = StateMachineWS.run(self, input_lines, input_offset)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/statemachine.py", line 239, in run
+    context, state, transitions)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/statemachine.py", line 460, in check_line
+    return method(match, context, next_state)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 2328, in explicit_markup
+    self.explicit_list(blank_finish)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 2358, in explicit_list
+    match_titles=self.state_machine.match_titles)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 319, in nested_list_parse
+    node=node, match_titles=match_titles)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 196, in run
+    results = StateMachineWS.run(self, input_lines, input_offset)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/statemachine.py", line 239, in run
+    context, state, transitions)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/statemachine.py", line 460, in check_line
+    return method(match, context, next_state)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 2631, in explicit_markup
+    nodelist, blank_finish = self.explicit_construct(match)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 2338, in explicit_construct
+    return method(self, expmatch)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 2081, in directive
+    directive_class, match, type_name, option_presets)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/docutils/parsers/rst/states.py", line 2130, in run_directive
+    result = directive_instance.run()
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/autodoc.py", line 1834, in run
+    documenter.generate(more_content=self.content)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/autodoc.py", line 1134, in generate
+    self.document_members(all_members)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/autodoc.py", line 1055, in document_members
+    check_module=members_check_module and not isattr)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/autodoc.py", line 1121, in generate
+    sig = self.format_signature()
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/autodoc.py", line 1346, in format_signature
+    return Documenter.format_signature(self)  # type: ignore
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/ext/autodoc.py", line 759, in format_signature
+    self.object, self.options, args, retann)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/application.py", line 493, in emit_firstresult
+    return self.events.emit_firstresult(event, self, *args)
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/events.py", line 84, in emit_firstresult
+    for result in self.emit(name, *args):
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/sphinx/events.py", line 79, in emit
+    results.append(callback(*args))
+  File "/home/susefra/.pyenv/versions/ocd/lib/python3.6/site-packages/numpydoc/numpydoc.py", line 119, in mangle_signature
+    sig = re.sub(sixu("^[^(]*"), sixu(""), sig)
+  File "/home/susefra/.pyenv/versions/ocd/lib64/python3.6/re.py", line 191, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
